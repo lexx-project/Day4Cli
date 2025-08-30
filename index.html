@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MyPortfolio — Beranda</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="navbar container">
+            <a class="brand" href="index.html">
+                <img src="assets/logo.svg" alt="Logo" width="28" height="28" />
+                <span>MyPortfolio</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation" id="navToggle">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Beranda</a></li>
+                <li><a href="#projects">Proyek</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero container">
+            <h1>Halo, saya <span class="accent">Lexy Evandra</span></h1>
+            <p>Developer yang suka bikin hal sederhana jadi bermanfaat.</p>
+            <a class="btn" href="#projects">Lihat Proyek</a>
+        </section>
+
+        <section id="projects" class="container section">
+            <h2>Proyek Terbaru</h2>
+            <div class="grid">
+                <article class="card">
+                    <h3>Aplikasi Cuaca</h3>
+                    <p>Aplikasi web sederhana untuk menampilkan informasi cuaca berdasarkan lokasi.</p>
+                    <a href="#" class="link">Lihat detail →</a>
+                </article>
+                <article class="card">
+                    <h3>Sistem Manajemen Tugas</h3>
+                    <p>Aplikasi untuk mengelola daftar tugas harian dengan fitur prioritas dan tenggat waktu.</p>
+                    <a href="#" class="link">Lihat detail →</a>
+                </article>
+                <article class="card">
+                    <h3>Website Portofolio Pribadi</h3>
+                    <p>Situs web responsif untuk menampilkan proyek-proyek dan informasi kontak.</p>
+                    <a href="#" class="link">Lihat detail →</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container small">
+            © <span id="year"></span> MyPortfolio — All rights reserved.
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
