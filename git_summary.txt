@@ -1,0 +1,49 @@
+]633;E;{   echo "===== DAFTAR BRANCH ====="\x3b   git branch -a\x3b   echo\x3b   echo "===== DAFTAR COMMIT (satu baris) ====="\x3b   git log --oneline --graph --decorate --all\x3b   echo\x3b   echo "===== ISI .gitignore ====="\x3b   cat .gitignore\x3b   echo\x3b   echo "===== REMOTE REPOSITORY ====="\x3b   git remote -v\x3b } > git_summary.txt;5f8f60c9-0ca0-421d-ae7a-f35154f0c949]633;C===== DAFTAR BRANCH =====
+  feat/contact-form
+* main
+  remotes/origin/feat/contact-form
+  remotes/origin/main
+
+===== DAFTAR COMMIT (satu baris) =====
+* 803110f (HEAD -> main, origin/main, origin/feat/contact-form, feat/contact-form) chore: init MyPortfolio (base structure)
+
+===== ISI .gitignore =====
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build output
+dist/
+build/
+.cache/
+coverage/
+*.map
+
+# Env & secrets
+.env
+.env.*
+*.pem
+*.key
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor/IDE
+.vscode/
+.idea/
+*.iml
+
+# Logs
+*.log
+logs/
+
+===== REMOTE REPOSITORY =====
+origin	https://github.com/lexx-project/Day4Cli.git (fetch)
+origin	https://github.com/lexx-project/Day4Cli.git (push)
